@@ -1,0 +1,120 @@
+# Translation of Plugins - Contact Form Submissions - Stable (latest release) in Portuguese (Brazil)
+# This file is distributed under the same license as the Plugins - Contact Form Submissions - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-29 04:16:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pt_BR\n"
+"Project-Id-Version: Plugins - Contact Form Submissions - Stable (latest release)\n"
+
+#: Admin.php:433
+msgid "Export to CSV"
+msgstr ""
+
+#: Admin.php:433
+msgid "Export the current set of results as CSV"
+msgstr ""
+
+#: Admin.php:220
+msgid "Files"
+msgstr ""
+
+#: Admin.php:212
+msgid "Posted"
+msgstr "Postado"
+
+#. Author of the plugin/theme
+msgid "Jason Green"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Never miss an enquiry again! Save all Contact Form 7 submissions in your database."
+msgstr ""
+
+#: Submissions.php:30
+msgid "Post Type Description"
+msgstr "Descrição do Tipo de Post"
+
+#: Submissions.php:26
+msgid "Not found in Trash"
+msgstr "Nenhum registro encontrado na lixeira"
+
+#: Submissions.php:25
+msgid "Not found"
+msgstr "Não encontrado"
+
+#: Submissions.php:24
+msgid "Search"
+msgstr "na Busca"
+
+#: Submissions.php:21
+msgid "Submissions"
+msgstr "Cadastramentos"
+
+#. #-#-#-#-#  contact-form-submissions-code.pot (Contact Form Submissions
+#. 1.6.2)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: Submissions.php:18
+msgid "Contact Form Submissions"
+msgstr ""
+
+#: Admin.php:341
+msgid "M j, Y @ H:i"
+msgstr "j M, Y \\à\\s H:i"
+
+#: Admin.php:264
+msgid "Additional Headers"
+msgstr ""
+
+#: Admin.php:258
+msgid "Body"
+msgstr "Body"
+
+#: Admin.php:254
+msgid "Subject"
+msgstr "Assunto"
+
+#: Admin.php:250
+msgid "Recipient"
+msgstr "Destinatário"
+
+#: Admin.php:246
+msgid "Sender"
+msgstr "Remetente"
+
+#: Admin.php:214
+msgid "Overview"
+msgstr "Overview"
+
+#: Admin.php:211
+msgid "Mail"
+msgstr "Correio"
+
+#: Admin.php:167
+msgid "Date"
+msgstr "Dia"
+
+#: Admin.php:152 Submissions.php:19 Submissions.php:20 Submissions.php:22
+#: Submissions.php:23 Submissions.php:29
+msgid "Submission"
+msgstr "Envio"
+
+#: Admin.php:118
+msgid "View"
+msgstr "Visualisar"
+
+#: Admin.php:83 Admin.php:153 Admin.php:242
+msgid "Contact Form"
+msgstr "Formulário de Contato"
+
+#: Admin.php:56
+msgid "Published"
+msgstr "Publicado"
+
+#: Admin.php:33 Admin.php:56 Admin.php:347
+msgid "Submitted"
+msgstr "Enviada"

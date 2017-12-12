@@ -1,97 +1,135 @@
 <?php /* Template Name: Home */ ?>
+<style type="text/css">
+  .col-full {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+</style>
 <?php get_header();?>
-    <!--SESSÃO PRODUTOS-->
-    <section id="Produtos" class="session scrollspy">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m12 l4">
-              <a href="http://www.aniastore.com.br/categorias/kids">
-                <div class="Destaque Destaque3" style=" background-image: url('<?php bloginfo('template_url');?>/images/gif-infantil.gif');">
-                </div>
-              </a>
-              <h4 class="paddingtop">Kids</h4>
+<!--SESSÃO PRODUTOS-->
+<section id="Produtos" class="session scrollspy">
+  <div class="produto-destacado" style="background: url(<?php bloginfo('template_url'); ?>/images/header-home.jpg);background-size: cover;background-position: 100% 50%;">
+    <div class="container">
+      <!-- DESTAQUE -->
+      <div class="row">
+        <div class="col s12">
+          <div class="col s12 l6 margin50">
+            <h1 class="white-text bold">Certificado PJ A1</h1>
+            <ul class="left-align">
+              <li>Assinar Nota Fiscal Eletrônica e Controle de Transporte Eletrônico (CT-e)</li>
+              <li>Acessar o Conectividade Social ICP (Caixa Econômica)</li>
+              <li>Comunicar com a Receita Federal (e-CAC)</li>
+              <li>Assinar e Transmitir o SPED</li>
+              <li>Transmitir o CAGED</li>
+            </ul>
+            <a class="hoverable btn waves cor-secundaria margin20 left">COMPRAR</a>
           </div>
-          <div class="col s12 m12 l4">
-              <a href="http://www.aniastore.com.br/verao">
-                <div class="Destaque Destaque3" style=" background-image: url('<?php bloginfo('template_url');?>/images/gif-verao.gif');">
-                </div>
-              </a>
-              <h4 class="paddingtop">Verão</h4>
-          </div>
-          <div class="col s12 m12 l4">
-              <a href="http://www.aniastore.com.br/presentes">
-                <div class="Destaque Destaque1" style=" background-image: url('<?php bloginfo('template_url');?>/images/gif-presentes.gif');">
-                </div>
-              </a>
-              <h4 class="paddingtop">Presentes</h4>
-          </div>
-          <!--TITULO-->
-          <div class="produtosrecentes">
-            <div class="col s12">
-              <h1>New In</h1>
-            </div> 
-           <?php
-            $args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 4, 'orderby' =>'date','order' => 'DESC' );
-            $loop = new WP_Query( $args );
-            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-            <div class="col s12 m6 l3 hoverable margin-top">   
-              <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="65px" height="115px" />'; ?>
-                <h3 class="woocommerce-loop-product__title"><?php the_title(); ?></h3>
-                <hr>
-                <!-- Hashtags -->
-                <p class="hashtags"><?php echo $product->get_categories(); ?></p>
-                <span>Em até 3x de R$<?php echo number_format(($product->price / 3), 2, ',', '.'); ?> sem juros</span>
-              </a>
-              </div>
-            <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
-          </div>
-          <!--BOTAO "LISTA COMPLETA"-->
-          <div class="col s12 center">
-            <a href="produtos" class="btn" style="margin-top: 50px;">Lista Completa</a>
-          </div>
-          <!-- CARROUSEL DE VANTAGENS -->
-          <div class="col s12 center margin50 grey lighten-4 padding10">
-          <?php
-            $vantagens = array( 'post_type' => 'vantagens', 'posts_per_page' => 5 );
-            $caroussel_vantagens = new WP_Query( $vantagens );
-            while ( $caroussel_vantagens->have_posts() ) : $caroussel_vantagens->the_post(); ?>
-              <div class="col l25 m4 s12">
-                <img class="vantagens" src="<?php echo the_field('icone_vantagem'); ?>">
-                <h1 class="vantagens"><?php the_title(); ?></h1>
-              </div>
-            <?php endwhile; wp_reset_query(); ?>
-          </div>
-          <!-- VERAO -->
-          <div class="col s12 center">
-            <?php
-            $banner = array( 'post_type' => 'banner', 'posts_per_page' => 1 );
-            $bannerdestaque = new WP_Query( $banner );
-            while ( $bannerdestaque->have_posts() ) : $bannerdestaque->the_post(); ?>
-            <h1 class="banner"><?php the_field('titulo'); ?> <i class="em em-heart"></i></h1>
-              <a href="<?php echo get_field('link_do_banner'); ?>">
-                <img src="<?php echo get_field('imagem'); ?>" class="responsive-img" style="margin: 0px auto;" />
-              </a>
-            <?php endwhile; wp_reset_query(); ?>
-          </div>
-      </div>
-      <div class="row" style="margin-bottom:0;">
-          <!-- COMENTARIOS DE CLIENTES -->
-          <div class="col s12 center margin50 grey lighten-4 padding10">
-            <h1>Quem comprou e voltou pra dizer <i class="em em-heart"></i><i class="em em-smile"></i></h1>
-            <?php
-              $comentarios = array( 'post_type' => 'comentarios_clientes', 'posts_per_page' => 3 );
-              $comentarios_clientes = new WP_Query( $comentarios );
-              while ( $comentarios_clientes->have_posts() ) : $comentarios_clientes->the_post(); ?>
-                <div class="col l4 m4 s12">
-                  <i class="em <?php echo the_field('emoji'); ?>"></i><br><br>
-                  <h1 class="vantagens"><?php echo the_field('comentario'); ?></h1>
-                  <p><?php echo the_field('nome_da_cliente'); ?></p>
-                </div>
-              <?php endwhile; wp_reset_query(); ?>
-          </div>
+        </div>
       </div>
     </div>
-    </section>
+  </div>
+  <!--TIRA DUVIDAS -->
+  <div class="certificado-tiraduvidas" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%, rgba(0, 0, 0, 0.55) 100%), url(https://images.unsplash.com/photo-1461773518188-b3e86f98242f?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);background-size:cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="col s12 center">
+            <h1 class="white-text margin30 bold">Certificados Digitais</h1>
+          </div>
+        </div>
+        <div class="col s12">
+          <div class="col s12 l5">
+            <h3 class="bold white-text">O que é?</h3>
+            <p class="justify white-text">O certificado digital é uma identidade eletrônica com dados protegidos por chaves criptografadas que comprovam quem fez uma determinada transação, podendo ser utilizada por empresas e pessoas físicas.</p>
+          </div>
+          <div class="col s12 l6 push-l1">
+            <h3 class="bold white-text">Para que serve?</h3>
+            <p class="justify white-text">O certificado digital serve para assinar e enviar documentos remotamente, cumprir com as obrigações fiscais e acessórias, no caso de uma empresa, realizar transações bancárias on-line, entre outras funcionalidades.</p>
+          </div>
+          <div class="col s12 l12 margin50">
+            <h3 class="bold white-text">Quem precisa?</h3>
+            <p class="justify white-text">A certificação digital é obrigatória para empresas do Simples Nacional (SN) com mais de cinco funcionários. Empresas que emitem nota fiscal eletrônica (NF-e) e estão no regime de tributação de lucro real ou lucro presumido também precisam da certificação. Caso a empresa não atenda a obrigatoriedade, fica impedida de declarar as obrigações acessórias e pagar tributos, incorrendo no risco de multa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--PASSO A PASSO -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 margin20">
+        <div class="col s12 center">
+          <h1 class="bold">Passo a Passo</h1>
+        </div>
+        <div class="col s12 l3">
+          <div class="col s12 center">
+            <img width="100" src="<?php bloginfo('template_url'); ?>/images/icone1.png" style="display: block;margin: 0px auto 20px;" />
+          </div>
+          <h3>1. Solicitação</h3>
+          <p class="justify margin20">Escolha o tipo de Certificado Digital, informe seus dados e efetue o pagamento.</p>
+        </div>
+        <div class="col s12 l3">
+          <div class="col s12 center">
+            <img width="100" src="<?php bloginfo('template_url'); ?>/images/icone2.png" style="display: block;margin: 0px auto 20px;" />
+          </div>
+          <h3>2. Agendamento</h3>
+          <p class="justify margin20">Após a confirmação de pagamento à ID Brasil Digital, você receberá um e-mail para o agendamento da validação presencial, processo essencial para a emissão do Certificado.</p>
+        </div>
+        <div class="col s12 l3">
+          <div class="col s12 center">
+            <img width="100" src="<?php bloginfo('template_url'); ?>/images/icone3.png" style="display: block;margin: 0px auto 20px;" />
+          </div>
+          <h3>3. Validação presencial</h3>
+          <p class="justify margin20">Nessa etapa você apresenta a documentação obrigatória, tem seus dados biométricos cadastrados e assina alguns termos. Confira a documentação <a href="#">aqui</a>.</p>
+        </div>
+        <div class="col s12 l3">
+          <div class="col s12 center">
+            <img width="100" src="<?php bloginfo('template_url'); ?>/images/icone4.png" style="display: block;margin: 0px auto 20px;" />
+          </div>
+          <h3>4. Emissão</h3>
+          <p class="justify margin20">Após a validação presencial, considere até 3 (três) dias para receber via e-mail o link para a emissão do Certificado Digital. Se o Certificado Digital for tipo A3, você poderá emití-lo no Ponto de Atendimento ou onde estiver realizando a validação da documentação.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- COMPARATIVO -->
+  <div class="grey lighten-5 comparativo">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 margin30">
+          <div class="col s12 center">
+            <h1 class="bold grey-text text-darken-1">Comparativo entre os certificados</h1>
+          </div>
+          <table class="striped">
+            <thead>
+              <th></th>
+              <th>e-CNPJ</th>
+              <th>e-CPF</th>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><p class="bold">Tipos de Certificados:</p></td>
+                  <td>e-CNPJ A1, e-CNPJ A3, CT-e, NF-e</td>
+                  <td>e-CPF A1, e-CPF A3</td>
+               </tr>
+               <tr>
+                  <td><p class="bold">Validade:</p></td>
+                  <td>De 1 a 5 anos</td>
+                  <td>De 1 a 5 anos</td>
+               </tr>
+               <tr>
+                  <td><p class="bold">Indicado para:</p></td>
+                  <td>Empresas, corporações e instituições cuja situação cadastral junto a Receita Federal do Brasil esteja ativa</td>
+                  <td>Pessoas físicas que desejam autenticar o seu acesso a sistemas, assinar documentos eletrônicos com validade jurídica e em casos específicos, também pode representar empresas jurídicas quando seu titular é o representante legal.</td>
+               </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col s12 margin30">
+          <a class="hoverable btn blue waves btn-primary">VER TODOS OS CERTIFICADOS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <?php get_footer('home'); ?>

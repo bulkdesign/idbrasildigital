@@ -17,41 +17,41 @@
         <div class="row">
           <div class="col l12 m12 s12 center">
             <!-- INSTITUCIONAL -->
-            <div class="col l3 s12">
-                <p class="grey-text text-lighten-4 left-align">INSTITUCIONAL</p>
-                <ul>
-                  <li class="left-align"><a href="/prazos-e-entrega">Prazos e Entrega</a></li>
-                  <li class="left-align"><a href="/formas-de-pagamento">Formas de Pagamento</a></li>
-                  <li class="left-align"><a href="/politica-de-privacidade">Política de Privacidade</a></li>
-                  <li class="left-align"><a href="/politica-de-trocas-e-devolucoes">Política de Trocas e Devoluções</a></li>
-              </ul>
-            </div>
-            <!-- LINKS -->
-            <div class="col l3 s12">
+            <div class="col l2 s12 left">
                 <p class="grey-text text-lighten-4 left-align">LINKS RÁPIDOS</p>
                 <ul>
-                  <li class="left-align"><a href="/feito-a-mao">Feito à mão</a></li>
-                  <li class="left-align"><a href="/nos-♥-natureza">Nós ♥ Natureza</a></li>
-                  <li class="left-align"><a href="/personalizados">Do Seu Jeito</a></li>
-                  <li class="left-align"><a href="/sobre-a-ania">Sobre a Ania</a></li>
-                  <li class="left-align"><a href="/contato">Central de Atendimento</a></li>
+                  <li class="left-align"><a href="/">Home</a></li>
+                  <li class="left-align"><a href="/a-id-brasil">A ID Brasil</a></li>
+                  <li class="left-align"><a href="/certificados-digitais">Certificados Digitais</a></li>
+                  <li class="left-align"><a href="/hardware-avulso">Hardware Avulso</a></li>
+                  <li class="left-align"><a href="/validacao-em-domicilio">Validação em Domicílio</a></li>
+                  <li class="left-align"><a href="/contato">Contato</a></li>
+              </ul>
+            </div>
+            <!-- LOCALIZACAO -->
+            <div class="col l8 s12 center">
+              <p class="grey-text text-lighten-4">LOCALIZAÇÃO</p>
+              <ul>
+                <li>Av. Mal. Floriano Peixoto, 7971 - Sala 12 - Boqueirão | Fone: (41) 3043-0800</li>
+                <li>R. São José dos Pinhais, 196 - Sítio Cercado | Fone: (41) 3308-3105</li>
+                <li>R. João Bettega, 6369 - Cidade Industrial - CIC | Fone: (41) 3121-3737</li>
+                
+                
               </ul>
             </div>
             <!-- REDES SOCIAIS-->
-            <div class="col l3 s12">
-                <p class="grey-text text-lighten-4 left-align">REDES SOCIAIS</p>
+            <div class="col l2 s12 right">
+                <p class="grey-text text-lighten-4 right-align">REDES SOCIAIS</p>
                 <ul>
-                  <li class="left-align"><a href="https://api.whatsapp.com/send?phone=5541987144714">Fone: (41) 98714-4714</a></li>
-                  <li class="left-align"><a href="http://facebook.com/storeania" target="_blank">Facebook</a></li>
-                  <li class="left-align"><a href="https://www.instagram.com/store_ania/" target="_blank">Instagram</a></li>
-              </ul>
-            </div>
-            <!-- FORMAS PAGAMENTO -->
-            <div class="col l3 s12">
-                <p class="grey-text text-lighten-4 left-align">FORMAS DE PAGAMENTO</p>
-                <ul>
-                  <li class="left-align">
-                    <img src="<?php bloginfo('template_url'); ?>/images/rodape.png">
+                  <li class="right padding-left20">
+                    <a href="#" target="_blank">
+                      <img width="30" src="<?php bloginfo('template_url'); ?>/images/linkedin.png">
+                    </a>
+                  </li>
+                  <li class="right">
+                    <a href="#" target="_blank">
+                      <img width="30" src="<?php bloginfo('template_url'); ?>/images/facebook.png" />
+                    </a>
                   </li>
               </ul>
             </div>
@@ -60,24 +60,17 @@
       </div>
       <div class="footer-copyright">
         <div class="container center">
-          Ania Store © <?php echo date('Y'); ?> - Todos os direitos reservados | Made by <a class="purple-text text-lighten-3" href="http://www.bulkdesign.com.br" target="blank">Bulk Design</a>
+          ID Brasil Digital © <?php echo date('Y'); ?> - Todos os direitos reservados | Made by <a class="purple-text text-lighten-3" href="http://www.bulkdesign.com.br" target="blank">Bulk Design</a>
         </div>
       </div>
   </footer>
 
 </div><!-- #page -->
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php bloginfo('template_url');?>/funcoes.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url');?>/materialize.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110389287-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-110389287-1');
-</script>
+<script type="text/javascript" src="<?php bloginfo('template_url') ?>/assets/js/bootstrap-table.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url') ?>/assets/js/filter-control/bootstrap-table-filter-control.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/assets/js/funcoes.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/assets/js/materialize.min.js"></script>
 
 </body>
 </html>

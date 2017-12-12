@@ -93,9 +93,9 @@ if ( ! function_exists( 'storefront_product_search' ) ) {
 	 */
 	function storefront_product_search() {
 		if ( storefront_is_woocommerce_activated() ) { ?>
-			<div class="site-search">
-				<?php echo do_shortcode('[wd_asp elements="search" ratio="100%"" id=1]'); ?>
-			</div>
+			<!-- <div class="site-search">
+				<?php // echo do_shortcode('[wd_asp elements="search" ratio="100%"" id=1]'); ?>
+			</div> -->
 		<?php
 		}
 	}

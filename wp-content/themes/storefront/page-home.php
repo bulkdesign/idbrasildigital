@@ -10,7 +10,7 @@
 </style>
 
 <!--SESSÃO PRODUTOS-->
-<div class="produto-destacado" style="background: url(<?php bloginfo('template_url'); ?>/images/header-home.jpg);background-size: cover;background-position: 100% 50%;">
+<div class="produto-destacado" style="background: url(<?php bloginfo('template_url'); ?>/images/header-home.jpg);background-attachment:fixed;background-size: cover;background-position: 100% 50%;">
   <div class="container">
     <!-- DESTAQUE -->
     <div class="row">

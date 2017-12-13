@@ -72,7 +72,7 @@ function my_login_logo_one() {
 ?> 
 <style type="text/css"> 
 body.login div#login h1 a {
-background-image: url(http://www.aniastore.com.br/wp-content/themes/aniastore/images/Logo_Ania.png);
+background-image: url(http://www.bulkdesign.com.br/wp-content/themes/idbrasildigital/images/logo_idbrasil.png);
 width: 100%;
 background-size: 60%;
 } 

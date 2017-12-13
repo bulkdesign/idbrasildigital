@@ -15,12 +15,12 @@
 
 <div id="post-<?php the_ID(); ?>">
 
-  <a href="/certificado-pj">
+  <a href="/idbrasildigital/certificados-para-pessoa-juridica/">
     <div class="hoverable certificado-pj">
       <h1 class="white-text bold">Certificado Pessoa Jurídica</h1>
     </div>
   </a>
-  <a href="/certificado-pf">
+  <a href="/idbrasildigital/certificados-para-pessoa-fisica/">
     <div class="hoverable certificado-pf">
       <h1 class="white-text bold">Certificado Pessoa Física</h1>
     </div>

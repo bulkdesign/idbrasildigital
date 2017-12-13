@@ -98,7 +98,7 @@
       <div class="row">
         <div class="col s12 margin30">
           <div class="col s12 center">
-            <h1 class="bold grey-text text-darken-1">Comparativo entre os certificados</h1>
+            <h1 class="bold">Comparativo entre os certificados</h1>
           </div>
           <table class="striped">
             <thead>

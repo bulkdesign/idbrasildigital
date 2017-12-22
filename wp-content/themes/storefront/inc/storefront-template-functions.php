@@ -214,9 +214,6 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 	function storefront_primary_navigation() {
 	    if ( has_nav_menu( 'primary' ) ) {
 		    ?>
-		    <div class="site-branding">
-				<?php storefront_site_title_or_logo(); ?>
-			</div>
 		    <nav class="primary-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
 			    <?php
 				    wp_nav_menu(

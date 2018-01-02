@@ -26,7 +26,20 @@ do_action( 'woocommerce_before_checkout_form', $checkout );
 
 // If checkout registration is disabled and not logged in, the user cannot checkout
 if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_required() && ! is_user_logged_in() ) {
-	echo apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'woocommerce' ) );
+	echo apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __(
+		'<div class="row" style="margin-bottom:50px;">
+			<div class="col s12 l6 push-l3">
+				<h3>Você deve estar logado para realizar a compra.</h3>
+			</div>
+			<div class="col s12 l4 pull-l2 margin50">
+				<div class="col s12 l6">
+					<a class="btn blue hoverable">Cadastrar</a>
+				</div>
+				<div class="col s12 l6">
+					<a class="btn hoverable">Login</a>
+				</div>
+			</div>
+		</div>', 'woocommerce' ) );
 	return;
 }
 

@@ -22,4 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
+    
+if( $product->is_type( 'simple' ) ){
+	echo '<h1 class="left-align blue-text bold" style="padding:0;font-size:34px">R$' . str_replace('.', ',', obtendo_o_preco()) . '</h1>';
+}
+
 ?>

@@ -147,3 +147,16 @@ function woocommerce_button_proceed_to_checkout() {
    <a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward"><?php _e( 'Fazer validação', 'woocommerce' ); ?></a>
    <?php
 }
+
+/**
+* FUNCAO PARA OBTER O PRECO
+*/
+function obtendo_o_preco() {
+    global $product;
+    
+    if( $product->is_on_sale() ) {
+        return $product->get_sale_price();
+    }
+
+    return $product->get_regular_price();
+}

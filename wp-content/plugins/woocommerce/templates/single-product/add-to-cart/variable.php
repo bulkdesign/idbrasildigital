@@ -1,3 +1,9 @@
+<style type="text/css">
+	table, td, tr, tbody {
+		border: none;
+	}
+</style>
+
 <?php
 /**
  * Variable product add to cart

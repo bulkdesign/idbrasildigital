@@ -73,7 +73,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
                             if (!WC()->cart->needs_shipping() || WC()->cart->ship_to_billing_address_only()) :
                                 ?>
 
-                                <h3><?php _e('Additional Information', 'woocommerce'); ?></h3>
+                                <h3><?php _e('Verificação do Responsável pelo Certificado', 'woocommerce'); ?></h3>
 
                             <?php endif; ?>
 
@@ -103,8 +103,17 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
             <?php } ?>
         <?php endif; ?>
 
-        <?php do_action('woocommerce_multistep_checkout_before_order_info', $checkout); ?>  
+        <?php do_action('woocommerce_multistep_checkout_before_order_info', $checkout); ?>
+            <h1 class="title-order-info">Confirmação de Dados</h1>
+            <div>   
+                <?php if (!WC()->cart->needs_shipping() || WC()->cart->ship_to_billing_address_only()) : ?>
+                    <h3><?php _e('Por favor, confirme os dados abaixo:', 'woocommerce'); ?></h3>
+                <?php endif; ?>
 
+                <?php foreach ($checkout->checkout_fields['order'] as $key => $field) : ?>
+                    <?php woocommerce_form_field($key, $field, $checkout->get_value($key)); ?>
+                <?php endforeach; ?>
+            </div>
 
         <?php if (get_option('wmc_merge_order_payment_tabs') != "true"): ?>
             <h1 class="title-order-info"><?php echo get_option('wmc_orderinfo_label') ? __(get_option('wmc_orderinfo_label'), 'woocommerce-multistep-checkout') : __('Order Information', 'woocommerce-multistep-checkout'); ?></h1>

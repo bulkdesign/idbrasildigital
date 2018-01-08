@@ -136,3 +136,14 @@ function bbloomer_remove_storefront_sidebar() {
         remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
     }
 }
+
+add_action('woocommerce_checkout_process', 'validacao_cnpj');
+
+/**
+* ADICAO DE NOVO PASSO
+*/
+function woocommerce_button_proceed_to_checkout() {
+   $checkout_url = "/idbrasildigital/?page_id=176"; ?>
+   <a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward"><?php _e( 'Fazer validação', 'woocommerce' ); ?></a>
+   <?php
+}

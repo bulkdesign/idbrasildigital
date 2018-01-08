@@ -39,11 +39,7 @@ $infoscnpj = json_decode($datacnpj, TRUE); // decode do json do iWebService
 $receitaCNPJ = $infoscnpj['RetornoCnpj']; // retorno do CPF do iWebService
 $dadosResponsavel = $receitaCNPJ['DadosResponsavel']['CpfResponsavel']; // retorno do CPF do Responsavel
 
-var_dump($receitaCNPJ);
-
 ?>
-
-<pre><?php print_r($dadosResponsavel); ?></pre>
 
 <?php
 

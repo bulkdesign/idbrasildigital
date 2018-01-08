@@ -31,16 +31,9 @@
                   <label for="nascimento_da_validacao">Data de Nascimento</label>
                 </div>
               </div>
-              <div class="row">
-                <div class="col s12 l6 push-l3">
-                  <div class="col s12 right">
-                    <div class="g-recaptcha" data-sitekey="6LehaD8UAAAAAM-Uh-azoNiOfexSaAEdCaj7Y1ax"></div>
-                  </div>
-                </div>
-              </div>
               <div class="row padding40">
                 <div class="col s12 right">
-                  <button class="btn waves-effect waves-light" type="submit">Validar
+                  <button class="btn waves-effect blue" type="submit">Validar
                     <i class="material-icons right">send</i>
                   </button>
                 </div>

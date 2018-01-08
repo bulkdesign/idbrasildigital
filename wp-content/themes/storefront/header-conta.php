@@ -18,7 +18,6 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/materialize.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/stylechild.css">
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <?php wp_head(); ?>
 </head>
 

@@ -143,7 +143,7 @@ add_action('woocommerce_checkout_process', 'validacao_cnpj');
 * ADICAO DE NOVO PASSO
 */
 function woocommerce_button_proceed_to_checkout() {
-   $checkout_url = "/idbrasildigital/?page_id=176"; ?>
+   $checkout_url = "/validacao/"; ?>
    <a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward"><?php _e( 'Fazer validação', 'woocommerce' ); ?></a>
    <?php
 }
@@ -153,7 +153,7 @@ function woocommerce_button_proceed_to_checkout() {
 */
 function obtendo_o_preco() {
     global $product;
-    
+
     if( $product->is_on_sale() ) {
         return $product->get_sale_price();
     }

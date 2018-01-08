@@ -11,16 +11,20 @@ input[type=submit] {
 }
 
 textarea, input:not([type]), input[type=text]:not(.browser-default), input[type=email]:not(.browser-default), input[type=tel]:not(.browser-default), textarea.materialize-textarea {
-  border: 1px solid #dbdbdb !important;
-  background: #220F4E;
-  color: #FFFFFF !important;
-  border-radius: 2px
+  border: 0.10em solid #dbdbdb !important;
+  border-radius: 2px;
+  text-align: left;
+  padding-left: 15px;
+  width: 97.3% !important;
 }
 
 textarea, textarea:hover, textarea:active {
-  color: #FFFFFF !important;
-  background: #220F4E;
-  text-align: center !important;
+  border: 0.10em solid #dbdbdb !important;
+  border-radius: 2px;
+  background: #FFFFFF;
+  text-align: left;
+  width: 100% !important;
+  box-shadow: none;
 }
 
 .wpsl-search {

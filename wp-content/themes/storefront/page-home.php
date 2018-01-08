@@ -24,7 +24,7 @@
             <li>Assinar e Transmitir o SPED</li>
             <li>Transmitir o CAGED</li>
           </ul>
-          <a href="http://localhost/idbrasildigital/?product=certificado" class="hoverable btn waves cor-secundaria margin20 left">COMPRAR</a>
+          <a href="<?php echo get_site_url(); ?>/produto/certificado/" class="hoverable btn waves cor-secundaria margin20 left">COMPRAR</a>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@
         </table>
       </div>
       <div class="col s12 margin30">
-        <a href="/loja" class="hoverable btn blue waves btn-primary">VER TODOS OS CERTIFICADOS</a>
+        <a href="<?php echo get_site_url(); ?>/loja" class="hoverable btn blue waves btn-primary">VER TODOS OS CERTIFICADOS</a>
       </div>
     </div>
   </div>

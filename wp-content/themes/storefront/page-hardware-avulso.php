@@ -46,7 +46,7 @@ h1 {
             <div class="col s12 l2 margin50 right right-align">
               <span>de</span> <span style="text-decoration:line-through;">R$55,00</span>
               <span>por</span><h2 style="font-weight:bold;">R$50,00</h2>
-              <a href="/?product=smart-card" class="btn btn-primary blue">COMPRAR</a>
+              <a href="/produto/smart-card/" class="btn btn-primary blue">COMPRAR</a>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ h1 {
             <div class="col s12 l2 margin50 right right-align">
               <span>de</span> <span style="text-decoration:line-through;">R$121,00</span>
               <span>por</span><h2 style="font-weight:bold;">R$110,00</h2>
-              <a href="/?product=leitora-de-smart-card" class="btn btn-primary blue">COMPRAR</a>
+              <a href="/produto/leitora-de-smart-card/" class="btn btn-primary blue">COMPRAR</a>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ h1 {
             <div class="col s12 l2 margin50 right right-align">
               <span>de</span> <span style="text-decoration:line-through;">R$154,00</span>
               <span>por</span><h2 style="font-weight:bold;">R$140,00</h2>
-              <a href="/?product=token-criptografico-usb" class="btn btn-primary blue">COMPRAR</a>
+              <a href="/produto/token-criptografico-usb/" class="btn btn-primary blue">COMPRAR</a>
             </div>
           </div>
         </div>

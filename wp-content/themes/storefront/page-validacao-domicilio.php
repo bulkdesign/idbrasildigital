@@ -16,9 +16,21 @@ input[type=submit] {
   margin-bottom: 50px;
 }
 
-input:not([type]), input[type=text]:not(.browser-default), input[type=email]:not(.browser-default), input[type=tel]:not(.browser-default) {
+textarea, input:not([type]), input[type=text]:not(.browser-default), input[type=email]:not(.browser-default), input[type=tel]:not(.browser-default), textarea.materialize-textarea {
   border: 0.10em solid #dbdbdb !important;
-  border-radius: 2px
+  border-radius: 2px;
+  text-align: left;
+  padding-left: 15px;
+  width: 97.3% !important;
+}
+
+textarea, textarea:hover, textarea:active {
+  border: 0.10em solid #dbdbdb !important;
+  border-radius: 2px;
+  background: #FFFFFF;
+  text-align: left;
+  width: 100% !important;
+  box-shadow: none;
 }
 
 </style>

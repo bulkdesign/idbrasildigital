@@ -9,6 +9,16 @@
   padding: 0 !important;
 }
 
+.escondendo {
+  width: 100%;
+  height: 50px;
+  background: white;
+  position: absolute;
+  top: 205px;
+  z-index: 2;
+  left: 0;
+}
+
 </style>
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -17,15 +27,9 @@
 
   <div class="container">
     <div class="row">
+      <div class="escondendo"></div>
       <div class="col s12">
-        <h1 class="center blue-text bold"><?php the_title(); ?></h1>
-      </div>
-      <div class="col s12">
-        <p>Selecione o local onde você deseja realizar a validação presencial:</p>
-      </div>
-      <div class="col s12">
-        <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/idbrasildigital/agendamento-centro" style="min-width:100%;height:580px;"></div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/idbrasildigital/agendamento-sitio-cercado" style="min-width:320px;height:1275px;margin-top: -100px;margin-bottom: 50px;" scrolling="no"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         <!-- Calendly inline widget end -->
       </div>

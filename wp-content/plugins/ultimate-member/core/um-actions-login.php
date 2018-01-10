@@ -260,7 +260,7 @@
 		<div class="um-col-alt">
 
 			<?php if ( isset( $args['show_rememberme'] ) && $args['show_rememberme'] ) {
-					echo $ultimatemember->fields->checkbox('rememberme', __('Keep me signed in','ultimate-member') );
+					echo $ultimatemember->fields->checkbox('rememberme', __('Mantenha-me conectado','ultimate-member') );
 					echo '<div class="um-clear"></div>';
 			} ?>
 
@@ -294,7 +294,7 @@
 		?>
 
 		<div class="um-col-alt-b">
-			<a href="<?php echo um_get_core_page('password-reset'); ?>" class="um-link-alt"><?php _e('Forgot your password?','ultimate-member'); ?></a>
+			<a href="<?php echo um_get_core_page('password-reset'); ?>" class="um-link-alt"><?php _e('Esqueceu sua senha?','ultimate-member'); ?></a>
 		</div>
 
 		<?php

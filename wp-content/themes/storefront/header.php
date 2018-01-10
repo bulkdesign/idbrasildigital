@@ -31,10 +31,18 @@
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 		<div class="container">
 			<div class="row" style="margin:0;">
-				<div class="col l4 s12">
+				<div class="col l3 s12" style="width: 250px">
 					<?php storefront_site_title_or_logo(); ?>
 				</div>
-				<div class="col l8 s12">
+				<ul class="col l3 s12 padding15">
+					<li class="col s12 l6">
+						<a class="blue-text" href="/cadastro-contabilidade/">Cadastro Contábil</a>
+					</li>
+					<li class="col s12 l3">
+						<a class="blue-text" href="/login/">Login</a>
+					</li>
+				</ul>
+				<div class="col l3 push-l3 s12">
 					<ul id="site-header-cart" class="site-header-cart menu">
 						<li class="<?php echo esc_attr( $class ); ?>">
 							<?php storefront_cart_link(); ?>

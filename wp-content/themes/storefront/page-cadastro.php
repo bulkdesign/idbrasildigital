@@ -1,4 +1,4 @@
-<?php /* Template Name: Cadastro */ ?>
+<?php /* Template Name: Cadastro Processo de Compra */ ?>
 
 <?php get_header('conta');?>
 

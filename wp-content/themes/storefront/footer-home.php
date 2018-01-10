@@ -42,7 +42,7 @@
               </ul>
             </div>
             <!-- LOCALIZACAO -->
-            <div class="col l8 s12 center">
+            <div class="col l6 s12 center">
               <p class="grey-text text-lighten-4">LOCALIZAÇÃO</p>
               <ul>
                 <li>Edifício Asa - Rua Voluntários da Pátria, 475 - Cj. 2012 - Centro | Fone: (41) 3042-0700</li>

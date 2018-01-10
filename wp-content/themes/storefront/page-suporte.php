@@ -1,4 +1,4 @@
-<?php /* Template Name: Contato */ ?>
+<?php /* Template Name: Suporte */ ?>
 <?php get_header();?>
 
 <style type="text/css">
@@ -27,52 +27,13 @@ textarea, textarea:hover, textarea:active {
   box-shadow: none;
 }
 
-.wpsl-search {
-  display: none;
-}
-
-.wpsl-store-location span {
-  color: #999999 !important;
-}
-
-#wpsl-wrap.wpsl-store-below #wpsl-result-list li {
-    padding: 0 10px 25px;
-}
-
-#wpsl-result-list li p {
-  margin: 0 !important;
-}
-
-#wpsl-result-list {
-  background: #f2f2f2;
-  color: #999999;
-}
-
-.wpsl-store-location {
-  padding: 0;
-}
-
-#wpsl-wrap.wpsl-store-below #wpsl-result-list li {
-  border: 1px solid #e2e0e0;
-  background: #f2f2f2 !important;
-}
-
-h1 {
-  padding-bottom: 0;
-}
-
-h6 {
-  font-size: 17px;
-  font-weight: 400;
-}
-
 </style>
 
 	<div class="container">
 		<div class="row">
 			<div class="col m12 s12">
-				<h1>Contato</h1>
-        <p>Você pode entrar em contato conosco através do formulário ou um dos nossos telefones. Para suporte, <a href="/suporte" class="blue-text">clique aqui.</a></p>
+				<h1>Suporte</h1>
+        <p>Caso você esteja enfrentando problemas na utilização do seu certificado, entre em contato através de um dos canais abaixo:</p>
 			</div>
 
       <div class="col s12">
@@ -83,24 +44,32 @@ h6 {
           <h6>Sede Sítio Cercado: (41) 3308-3105</h6> 
           <h6>Sede CIC: (41) 3121-3737</h6>
           <div class="margin30">
-            <h3 class="blue-text">E-mails:</h3>
-            <h6><a href="mailto:contato@idbrasildigital.com.br"></a>contato@idbrasildigital.com.br</h6>
-            <h6><a href="mailto:id@idbrasildigital.com.br"></a>id@idbrasildigital.com.br</h6>
-            <h6><a href="mailto:sitiocercado@idbrasildigital.com.br"></a>sitiocercado@idbrasildigital.com.br</h6>
+            <h3 class="blue-text">E-mail de Suporte:</h3>
+            <h6><a href="mailto:sac@idbrasildigital.com.br"></a>sac@idbrasildigital.com.br</h6>
           </div>
         </div>
   			<div class="col s12 l8">
-  			  <?php echo do_shortcode('[contact-form-7 id="60" title="Contato"]'); ?>
+  			  <?php echo do_shortcode('[contact-form-7 id="211" title="Suporte"]'); ?>
   			</div>
       </div>
       <!-- LOCALIZACAO -->
       <div class="col m12 s12">
-        <h1>Localização</h1>
-        <p>Encontre no mapa abaixo uma de nossas sedes:</p>
+        <h1 style="padding:0">Downloads</h1>
+        <p>O especialista em suporte irá solicitar o download de um dos programas abaixo. Clique para baixar:</p>
+      </div>
+      <div class="col l8 push-l2 s12">
+        <div class="col l6 s12 padding10">
+          <a href="http://www.ammyy.com/en/downloads.html">
+            <img style="max-height: 100px;display: block;margin: 0px auto" src="<?php bloginfo('template_url'); ?>/images/ammyy.png" />
+          </a>
+        </div>
+        <div class="col l6 s12 padding10">
+          <a href="https://www.teamviewer.com/pt/download">
+            <img style="max-height: 200px;display: block;margin: 0px auto" src="<?php bloginfo('template_url'); ?>/images/teamviewer.png" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  
-  <?php echo do_shortcode('[wpsl]'); ?>
 
 <?php get_footer(); ?>

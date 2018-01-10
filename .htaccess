@@ -3,6 +3,8 @@
 RewriteEngine On
 RewriteBase /idbrasildigital/
 RewriteRule ^index\.php$ - [L]
+RewriteRule ^contador/(.+)/? /idbrasildigital/contador?code=$1 [QSA,L]
+RewriteRule ^coupon/(.+)/? /idbrasildigital/coupon?code=$1 [QSA,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /idbrasildigital/index.php [L]

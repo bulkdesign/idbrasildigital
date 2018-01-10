@@ -38,9 +38,15 @@
 					<li class="col s12 l6">
 						<a class="blue-text" href="/cadastro-contabilidade/">Cadastro Contábil</a>
 					</li>
-					<li class="col s12 l3">
-						<a class="blue-text" href="/login/">Login</a>
-					</li>
+					<?php if ( ! is_user_logged_in() ) { ?>
+						<li class="col s12 l3">
+							<a class="blue-text" href="/login/">Login</a>
+						</li>
+					<?php } else { ?>
+						<li class="col s12 l3">
+							<a class="blue-text" href="<?php echo wp_logout_url( get_permalink() ); ?>">Logout</a>
+						</li>
+					<?php } ?>
 				</ul>
 				<div class="col l3 push-l3 s12">
 					<ul id="site-header-cart" class="site-header-cart menu">

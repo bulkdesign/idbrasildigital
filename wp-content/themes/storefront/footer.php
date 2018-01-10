@@ -18,18 +18,31 @@
           <div class="col l12 m12 s12 center">
             <!-- INSTITUCIONAL -->
             <div class="col l2 s12 left">
-                <p class="grey-text text-lighten-4 left-align">LINKS RÁPIDOS</p>
-                <ul>
+              <p class="grey-text text-lighten-4 left-align">NAVEGAÇÃO</p>
+              <ul>
                   <li class="left-align"><a href="/">Home</a></li>
                   <li class="left-align"><a href="/a-id-brasil">A ID Brasil</a></li>
                   <li class="left-align"><a href="/certificados-digitais">Certificados Digitais</a></li>
                   <li class="left-align"><a href="/hardware-avulso">Hardware Avulso</a></li>
                   <li class="left-align"><a href="/validacao-em-domicilio">Validação em Domicílio</a></li>
+                  <li class="left-align"><a href="/agendamento">Agendamento</a></li>
+              </ul>
+            </div>
+            <div class="col l2 s12">
+              <p class="grey-text text-lighten-4 left-align">LINKS RÁPIDOS</p>
+              <ul>
                   <li class="left-align"><a href="/contato">Contato</a></li>
+                  <li class="left-align"><a href="/suporte">Suporte</a></li>
+                  <li class="left-align"><a href="/cadastro-contabilidade">Cadastro Contábil</a></li>
+                  <?php if ( ! is_user_logged_in() ) { ?>
+                    <li class="left-align"><a href="/login">Login</a></li>
+                  <?php } else { ?>
+                    <li class="left-align"><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Logout</a></li>
+                  <?php } ?>
               </ul>
             </div>
             <!-- LOCALIZACAO -->
-            <div class="col l8 s12 center">
+            <div class="col l6 s12 center">
               <p class="grey-text text-lighten-4">LOCALIZAÇÃO</p>
               <ul>
                 <li>Edifício Asa - Rua Voluntários da Pátria, 475 - Cj. 2012 - Centro | Fone: (41) 3042-0700</li>

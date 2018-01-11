@@ -123,7 +123,7 @@ class WC_Itau_Shopline_Gateway extends WC_Payment_Gateway {
 				'type'        => 'text',
 				'description' => __( 'This controls the title which the user sees during checkout.', 'wc-itau-shopline' ),
 				'desc_tip'    => true,
-				'default'     => __( 'Backing Billet or Online Debit', 'wc-itau-shopline' ),
+				'default'     => __( 'Boleto Bancário', 'wc-itau-shopline' ),
 			),
 			'description' => array(
 				'title'       => __( 'Description', 'wc-itau-shopline' ),
@@ -234,7 +234,7 @@ class WC_Itau_Shopline_Gateway extends WC_Payment_Gateway {
 		}
 
 		if ( empty( $_REQUEST['billing_cpf'] ) && empty( $_REQUEST['billing_cnpj'] ) ) {
-			wc_add_notice( '<strong>' . $this->get_title() . ':</strong> ' . __( 'Missing CPF or CNPJ.', 'wc-itau-shopline' ), 'error' );
+			wc_add_notice( '<strong>' . $this->get_title() . ':</strong> ' . __( 'Faltando CPF ou CNPJ.', 'wc-itau-shopline' ), 'error' );
 
 			return false;
 		}
@@ -253,7 +253,7 @@ class WC_Itau_Shopline_Gateway extends WC_Payment_Gateway {
 		$order = wc_get_order( $order_id );
 
 		// Mark as on-hold (we're awaiting the payment).
-		$order->update_status( 'on-hold', __( 'Itau Shopline: Awaiting payment.', 'wc-itau-shopline' ) );
+		$order->update_status( 'on-hold', __( 'Itau Shopline: Aguardando pagamento.', 'wc-itau-shopline' ) );
 
 		// Remove cart.
 		WC()->cart->empty_cart();
@@ -281,8 +281,8 @@ class WC_Itau_Shopline_Gateway extends WC_Payment_Gateway {
 
 			if ( is_object( $order ) && $this->id === $order->payment_method ) {
 				if ( 'on-hold' !== $order->status ) {
-					$message = sprintf( __( 'You can no longer make the payment for order %s.', 'wc-itau-shopline' ), $order->get_order_number() );
-					wp_die( $message, __( 'Payment method expired', 'wc-itau-shopline' ), array( 'response' => 200 ) );
+					$message = sprintf( __( 'Você não pode mais fazer o pagamento do pedido %s.', 'wc-itau-shopline' ), $order->get_order_number() );
+					wp_die( $message, __( 'Método de pagamento expirado', 'wc-itau-shopline' ), array( 'response' => 200 ) );
 				}
 
 				$hash = $this->api->get_payment_hash( $order );

@@ -445,6 +445,10 @@ nav ul a {
 	color: #FFFFFF !important;
 }
 
+.menu {
+	padding: 0 !important;
+}
+
 #menu-menu-de-navegacao li {
 	width: 16.666%; /* fallback for non-calc() browsers */
 	width: calc(100% / 6);
@@ -729,6 +733,11 @@ ul.page-numbers {
 	-webkit-border-radius: 0!important;
 	border-radius: 0px!important;
 	border: 1px solid #ccc!important;
+}
+
+#order_review {
+	width: 100% !important;
+	float: left !important;
 }
 
 /*MEDIA QUERY*/

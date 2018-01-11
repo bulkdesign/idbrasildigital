@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php else : ?>
 
 	<div class="woocommerce-message">
-		<span><?php echo sprintf( __( 'You just made the payment in %s using the %s.', 'woocommerce-pagseguro' ), '<strong>' . $installments . 'x</strong>', '<strong>' . $method . '</strong>' ); ?><br /><?php _e( 'As soon as the credit card operator confirm the payment, your order will be processed.', 'woocommerce-pagseguro' ); ?></span>
+		<span><?php echo sprintf( __( 'Você acabou de fazer o pagamento em %s usando o %s.', 'woocommerce-pagseguro' ), '<strong>' . $installments . 'x</strong>', '<strong>' . $method . '</strong>' ); ?><br /><?php _e( 'Assim que a operadora do cartão de crédito confirmar seu pagamento, seu pedido será processado.', 'woocommerce-pagseguro' ); ?></span>
 	</div>
 
 <?php

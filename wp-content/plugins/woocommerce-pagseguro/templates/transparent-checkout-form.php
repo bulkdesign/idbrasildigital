@@ -32,40 +32,40 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php if ( 'yes' == $tc_credit ) : ?>
 		<div id="pagseguro-credit-card-form" class="pagseguro-method-form">
 			<p id="pagseguro-card-holder-name-field" class="form-row form-row-first">
-				<label for="pagseguro-card-holder-name"><?php _e( 'Card Holder Name', 'woocommerce-pagseguro' ); ?> <small>(<?php _e( 'as recorded on the card', 'woocommerce-pagseguro' ); ?>)</small> <span class="required">*</span></label>
+				<label for="pagseguro-card-holder-name"><?php _e( 'Nome Completo do Titular', 'woocommerce-pagseguro' ); ?> <small>(<?php _e( 'como está escrito no cartão', 'woocommerce-pagseguro' ); ?>)</small> <span class="required">*</span></label>
 				<input id="pagseguro-card-holder-name" name="pagseguro_card_holder_name" class="input-text" type="text" autocomplete="off" style="font-size: 1.5em; padding: 8px;" />
 			</p>
 			<p id="pagseguro-card-number-field" class="form-row form-row-last">
-				<label for="pagseguro-card-number"><?php _e( 'Card Number', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
+				<label for="pagseguro-card-number"><?php _e( 'Número do Cartão', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
 				<input id="pagseguro-card-number" class="input-text wc-credit-card-form-card-number" type="tel" maxlength="20" autocomplete="off" placeholder="&bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;" style="font-size: 1.5em; padding: 8px;" />
 			</p>
 			<div class="clear"></div>
 			<p id="pagseguro-card-expiry-field" class="form-row form-row-first">
-				<label for="pagseguro-card-expiry"><?php _e( 'Expiry (MM/YYYY)', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
+				<label for="pagseguro-card-expiry"><?php _e( 'Expira em (MM/YYYY)', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
 				<input id="pagseguro-card-expiry" class="input-text wc-credit-card-form-card-expiry" type="tel" autocomplete="off" placeholder="<?php _e( 'MM / YYYY', 'woocommerce-pagseguro' ); ?>" style="font-size: 1.5em; padding: 8px;" />
 			</p>
 			<p id="pagseguro-card-cvc-field" class="form-row form-row-last">
-				<label for="pagseguro-card-cvc"><?php _e( 'Security Code', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
+				<label for="pagseguro-card-cvc"><?php _e( 'Código de Segurança', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
 				<input id="pagseguro-card-cvc" class="input-text wc-credit-card-form-card-cvc" type="tel" autocomplete="off" placeholder="<?php _e( 'CVC', 'woocommerce-pagseguro' ); ?>" style="font-size: 1.5em; padding: 8px;" />
 			</p>
 			<div class="clear"></div>
 			<p id="pagseguro-card-installments-field" class="form-row form-row-first">
-				<label for="pagseguro-card-installments"><?php _e( 'Installments', 'woocommerce-pagseguro' ); ?> <small>(<?php _e( 'the minimum value of the installment is R$ 5,00', 'woocommerce-pagseguro' ); ?>)</small> <span class="required">*</span></label>
+				<label for="pagseguro-card-installments"><?php _e( 'Parcelas', 'woocommerce-pagseguro' ); ?> <small>(<?php _e( 'o valor mínimo da parcela é R$ 5,00', 'woocommerce-pagseguro' ); ?>)</small> <span class="required">*</span></label>
 				<select id="pagseguro-card-installments" name="pagseguro_card_installments" style="font-size: 1.5em; padding: 4px; width: 100%;" disabled="disabled">
 					<option value="0">--</option>
 				</select>
 			</p>
 			<p id="pagseguro-card-holder-cpf-field" class="form-row form-row-last">
-				<label for="pagseguro-card-holder-cpf"><?php _e( 'Card Holder CPF', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
+				<label for="pagseguro-card-holder-cpf"><?php _e( 'CPF do Titular', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
 				<input id="pagseguro-card-holder-cpf" name="pagseguro_card_holder_cpf" class="input-text wecfb-cpf-field" type="tel" autocomplete="off" style="font-size: 1.5em; padding: 8px;" />
 			</p>
 			<div class="clear"></div>
 			<p id="pagseguro-card-holder-birth-date-field" class="form-row form-row-first">
-				<label for="pagseguro-card-holder-birth-date"><?php _e( 'Card Holder Birth Date', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
+				<label for="pagseguro-card-holder-birth-date"><?php _e( 'Data de Nascimento do Titular', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
 				<input id="pagseguro-card-holder-birth-date" name="pagseguro_card_holder_birth_date" class="input-text" type="tel" autocomplete="off" placeholder="<?php _e( 'DD / MM / YYYY', 'woocommerce-pagseguro' ); ?>" style="font-size: 1.5em; padding: 8px;" />
 			</p>
 			<p id="pagseguro-card-holder-phone-field" class="form-row form-row-last">
-				<label for="pagseguro-card-holder-phone"><?php _e( 'Card Holder Phone', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
+				<label for="pagseguro-card-holder-phone"><?php _e( 'Telefone do Titular', 'woocommerce-pagseguro' ); ?> <span class="required">*</span></label>
 				<input id="pagseguro-card-holder-phone" name="pagseguro_card_holder_phone" class="input-text" type="tel" autocomplete="off" placeholder="<?php _e( '(xx) xxxx-xxxx', 'woocommerce-pagseguro' ); ?>" style="font-size: 1.5em; padding: 8px;" />
 			</p>
 			<div class="clear"></div>
@@ -101,6 +101,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	<?php endif; ?>
 
-	<p><?php esc_html_e( 'This purchase is being made in Brazil', 'woocommerce-pagseguro' ); ?> <img src="<?php echo esc_url( $flag ); ?>" alt="<?php esc_attr_e( 'Brazilian flag', 'woocommerce-pagseguro' ); ?>" style="display: inline; float: none; vertical-align: middle; border: none;" /></p>
+	<p><img src="<?php echo esc_url( $flag ); ?>" alt="<?php esc_attr_e( 'Brazilian flag', 'woocommerce-pagseguro' ); ?>" style="display: inline; float: none; vertical-align: middle; border: none;" /></p>
 
 </fieldset>

@@ -41,11 +41,11 @@ if ( 2 == $type ) {
 
 } else {
 
-	echo sprintf( __( 'You just made the payment in %s using the %s.', 'woocommerce-pagseguro' ), $installments . 'x', $method );
+	echo sprintf( __( 'Você acabou de fazer o pagamento em %s usando o %s.', 'woocommerce-pagseguro' ), $installments . 'x', $method );
 
 	echo "\n";
 
-	_e( 'As soon as the credit card operator confirm the payment, your order will be processed.', 'woocommerce-pagseguro' );
+	_e( 'Assim que a operadora do cartão de crédito confirmar seu pagamento, seu pedido será processado.', 'woocommerce-pagseguro' );
 
 }
 

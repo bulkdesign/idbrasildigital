@@ -16,10 +16,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <p class="order_details">
 	<?php if ( $billet_only ) : ?>
-		<?php esc_html_e( 'Please use the link below get your banking billet:', 'wc-itau-shopline' ); ?>
+		<?php esc_html_e( 'Clique no link para efetuar o pagamento:', 'wc-itau-shopline' ); ?>
 	<?php else : ?>
-		<?php esc_html_e( 'Please use the link below to make your payment:', 'wc-itau-shopline' ); ?>
+		<?php esc_html_e( 'Clique no link para efetuar o pagamento:', 'wc-itau-shopline' ); ?>
 	<?php endif; ?>
 	<br />
-	<a class="button" href="<?php echo esc_url( $url ); ?>" target="_blank"><?php esc_html_e( 'Pay order', 'wc-itau-shopline' ); ?></a><br /><?php esc_html_e( 'After we receive the payment confirmation, your order will be processed.', 'wc-itau-shopline' ); ?>
+	<a class="button" href="<?php echo esc_url( $url ); ?>" target="_blank"><?php esc_html_e( 'Pay order', 'wc-itau-shopline' ); ?></a><br /><?php esc_html_e( 'Após recebermos a confirmação do pagamento, o seu pedido será processado.', 'wc-itau-shopline' ); ?>
 </p>

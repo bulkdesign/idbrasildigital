@@ -146,12 +146,12 @@ class WC_PagSeguro_Gateway extends WC_Payment_Gateway {
 					'wc_pagseguro_params',
 					array(
 						'session_id'         => $session_id,
-						'interest_free'      => __( 'interest free', 'woocommerce-pagseguro' ),
-						'invalid_card'       => __( 'Invalid credit card number.', 'woocommerce-pagseguro' ),
-						'invalid_expiry'     => __( 'Invalid expiry date, please use the MM / YYYY date format.', 'woocommerce-pagseguro' ),
-						'expired_date'       => __( 'Please check the expiry date and use a valid format as MM / YYYY.', 'woocommerce-pagseguro' ),
-						'general_error'      => __( 'Unable to process the data from your credit card on the PagSeguro, please try again or contact us for assistance.', 'woocommerce-pagseguro' ),
-						'empty_installments' => __( 'Select a number of installments.', 'woocommerce-pagseguro' ),
+						'interest_free'      => __( 'sem juros', 'woocommerce-pagseguro' ),
+						'invalid_card'       => __( 'Número de cartão inválido.', 'woocommerce-pagseguro' ),
+						'invalid_expiry'     => __( 'Data de vencimento inválida, por favor use o formato de data MM / YYYY.', 'woocommerce-pagseguro' ),
+						'expired_date'       => __( 'Por favor verifique a data de vencimento do cartão.', 'woocommerce-pagseguro' ),
+						'general_error'      => __( 'Não foi possível realizar o processamento do seu cartão de crédito no PagSeguro.', 'woocommerce-pagseguro' ),
+						'empty_installments' => __( 'Selecione o número de parcelas.', 'woocommerce-pagseguro' ),
 					)
 				);
 			}

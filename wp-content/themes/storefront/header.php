@@ -34,21 +34,26 @@
 				<div class="col l3 s12" style="width: 250px">
 					<?php storefront_site_title_or_logo(); ?>
 				</div>
-				<ul class="col l3 s12 padding15">
-					<li class="col s12 l6">
+				<ul class="col l5 s12 padding15">
+					<li class="col s12 l4">
 						<a class="blue-text" href="/cadastro-contabilidade/">Cadastro Contábil</a>
 					</li>
-					<?php if ( ! is_user_logged_in() ) { ?>
+					<?php if ( is_user_logged_in() ) { ?>
 						<li class="col s12 l3">
+							<a class="blue-text" href="/minha-conta">Minha conta</a>
+						</li>
+					<?php } else { } ?>
+					<?php if ( ! is_user_logged_in() ) { ?>
+						<li class="col s12 l2">
 							<a class="blue-text" href="/login/">Login</a>
 						</li>
 					<?php } else { ?>
-						<li class="col s12 l3">
+						<li class="col s12 l2">
 							<a class="blue-text" href="<?php echo wp_logout_url( get_permalink() ); ?>">Logout</a>
 						</li>
 					<?php } ?>
 				</ul>
-				<div class="col l3 push-l3 s12">
+				<div class="col l3 push-l1 s12">
 					<ul id="site-header-cart" class="site-header-cart menu">
 						<li class="<?php echo esc_attr( $class ); ?>">
 							<?php storefront_cart_link(); ?>

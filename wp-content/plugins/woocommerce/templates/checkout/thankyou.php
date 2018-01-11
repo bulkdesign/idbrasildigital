@@ -38,7 +38,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php else : ?>
 
-			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
+			<div class="row">
+				<h3 class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></h3>
+			</div>
+
+			<?php do_action( 'woocommerce_thankyou_' . $order->get_payment_method(), $order->get_id() ); ?>
+
+			<div class="row">
+				<p>Faça o agendamento da validação presencial clicando no botão abaixo:</p>
+			</div>
+
+			<a class="btn btn-primary blue white-text hoverable" href="/agendamento">FAZER O AGENDAMENTO DA VALIDAÇÃO PRESENCIAL</a>
 
 			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
 
@@ -70,7 +80,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php endif; ?>
 
-		<?php do_action( 'woocommerce_thankyou_' . $order->get_payment_method(), $order->get_id() ); ?>
 		<?php do_action( 'woocommerce_thankyou', $order->get_id() ); ?>
 
 	<?php else : ?>

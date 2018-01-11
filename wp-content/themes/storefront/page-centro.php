@@ -14,7 +14,6 @@
   height: 50px;
   background: white;
   position: absolute;
-  top: 205px;
   z-index: 2;
   left: 0;
 }

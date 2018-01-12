@@ -11,7 +11,7 @@
             <img class="responsive-img" src="<?php bloginfo('template_url'); ?>/images/logo_idbrasil.png" />
           </div>
           <div class="col s12 margin30">
-            <?php echo do_shortcode('[ultimatemember form_id=171]'); ?>
+            <?php echo do_shortcode('[ultimatemember form_id=12]'); ?>
           </div>
         </div>
       </div>

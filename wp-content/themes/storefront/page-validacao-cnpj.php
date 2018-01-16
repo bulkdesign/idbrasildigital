@@ -1,4 +1,4 @@
-<?php /* Template Name: Validacao */ ?>
+<?php /* Template Name: Validacao PJ */ ?>
 
 <?php get_header('conta');?>
 

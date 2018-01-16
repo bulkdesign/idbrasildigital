@@ -41,7 +41,7 @@
 						<a class="blue-text" href="/cadastro-contabilidade/">Cadastro Contábil</a>
 					</li>
 					<?php if ( is_user_logged_in() ) { ?>
-						<li class="col s12 l2">
+						<li class="col s12 l3">
 							<a class="blue-text" href="/minha-conta">Minha conta</a>
 						</li>
 					<?php } else { } ?>
@@ -55,7 +55,7 @@
 						</li>
 					<?php } ?>
 				</ul>
-				<div class="col l3 push-l1 s12">
+				<div class="col l3 s12">
 					<ul id="site-header-cart" class="site-header-cart menu">
 						<li class="<?php echo esc_attr( $class ); ?>">
 							<?php storefront_cart_link(); ?>

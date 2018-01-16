@@ -140,15 +140,6 @@ function bbloomer_remove_storefront_sidebar() {
 add_action('woocommerce_checkout_process', 'validacao_cnpj');
 
 /**
-* ADICAO DE NOVO PASSO
-*/
-function woocommerce_button_proceed_to_checkout() {
-   $checkout_url = "/validacao/"; ?>
-   <a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward"><?php _e( 'Fazer validação', 'woocommerce' ); ?></a>
-   <?php
-}
-
-/**
 * FUNCAO PARA OBTER O PRECO
 */
 function obtendo_o_preco() {

@@ -15,7 +15,7 @@
     <!-- DESTAQUE -->
     <div class="row">
       <div class="col s12 margin50">
-        <div class="col s12 l3 padding20 blue-rgba margin8per z-depth-4">
+        <div class="col s12 l4 padding20 blue-rgba margin8per z-depth-4">
           <h1 class="white-text bold padding0">e-CNPJ</h1>
           <ul class="center margin0">
             <li><p class="white-text bold" style="margin:0;">A1 | COMPUTADOR</p></li>
@@ -27,26 +27,26 @@
           <hr>
           <a href="<?php echo get_site_url(); ?>/categoria-produto/e-cnpj/" class="white-text bold">+ Ver Todos</a>
         </div>
-        <div class="col s12 l3 push-l1 padding20 cor-secundaria-rgba margin8per z-depth-4">
+        <div class="col s12 l4 padding20 cor-secundaria-rgba margin8per z-depth-4">
           <h1 class="white-text bold padding0">e-CPF</h1>
           <ul class="center margin0">
-            <li><p class="white-text bold" style="margin:0;">A3 | CERTIFICADO</p></li>
-            <span class="white-text" style="text-decoration:line-through;">de R$ 254,00</span> <span class="white-text">por</span>
-            <h3 class="white-text bold">R$240,00</h3>
+            <li><p class="white-text bold" style="margin:0;">A1 | CERTIFICADO</p></li>
+            <span class="white-text" style="text-decoration:line-through;">de R$ 176,00</span> <span class="white-text">por</span>
+            <h3 class="white-text bold">R$160,00</h3>
           </ul>
-          <a href="<?php echo get_site_url(); ?>/produto/certificado-a3-e-cpf/" class="hoverable btn waves blue margin20 center">COMPRAR</a>
+          <a href="<?php echo get_site_url(); ?>/produto/certificado-a1-e-cpf/" class="hoverable btn waves blue margin20 center">COMPRAR</a>
           <br><br>
           <hr>
           <a href="<?php echo get_site_url(); ?>/categoria-produto/e-cpf/" class="white-text bold">+ Ver Todos</a>
         </div>
-        <div class="col s12 l3 push-l2 padding20 cor-terciaria-rgba margin8per z-depth-4">
+        <div class="col s12 l4 padding20 cor-terciaria-rgba margin8per z-depth-4">
           <h1 class="white-text bold padding0">NF-e</h1>
           <ul class="center margin0">
-            <li><p class="white-text bold" style="margin:0;">A3 | CARTÃO</p></li>
-            <span class="white-text" style="text-decoration:line-through;">de R$ 434,50</span> <span class="white-text">por</span>
-            <h3 class="white-text bold">R$395,00</h3>
+            <li><p class="white-text bold" style="margin:0;">A1 | CERTIFICADO</p></li>
+            <span class="white-text" style="text-decoration:line-through;">de R$ 258,50 </span> <span class="white-text">por</span>
+            <h3 class="white-text bold">R$235,00</h3>
           </ul>
-          <a href="<?php echo get_site_url(); ?>/produto/certificado-em-smartcard-nf-e/" class="hoverable btn waves cor-secundaria margin20 center">COMPRAR</a>
+          <a href="<?php echo get_site_url(); ?>/produto/certificado-a1-nf-e/" class="hoverable btn waves cor-secundaria margin20 center">COMPRAR</a>
           <br><br>
           <hr>
           <a href="<?php echo get_site_url(); ?>/categoria-produto/nf-e/" class="white-text bold">+ Ver Todos</a>

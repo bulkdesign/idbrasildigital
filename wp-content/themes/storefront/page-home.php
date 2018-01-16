@@ -14,15 +14,31 @@
   <div class="container">
     <!-- DESTAQUE -->
     <div class="row">
-      <div class="col s12">
-        <div class="col s12 l6 margin50">
-          <h1 class="white-text bold">Certificado PJ A1</h1>
+      <div class="col s12 margin50">
+        <div class="col s12 l3 push-l1 margin50">
+          <h1 class="white-text bold">e-CNPJ</h1>
           <ul class="left-align">
-            <li>Assinar Nota Fiscal Eletrônica e Controle de Transporte Eletrônico (CT-e)</li>
-            <li>Acessar o Conectividade Social ICP (Caixa Econômica)</li>
-            <li>Comunicar com a Receita Federal (e-CAC)</li>
-            <li>Assinar e Transmitir o SPED</li>
-            <li>Transmitir o CAGED</li>
+            <li><p class="bold" style="margin:0;">A1 | COMPUTADOR</p></li>
+            <span style="text-decoration:line-through;">de R$ 258,50</span> por
+            <h3 class="white-text bold">R$235,00</h3>
+          </ul>
+          <a href="<?php echo get_site_url(); ?>/produto/certificado/" class="hoverable btn waves cor-secundaria margin20 left">COMPRAR</a>
+        </div>
+        <div class="col s12 l3 push-l2 margin50">
+          <h1 class="white-text bold">e-CPF</h1>
+          <ul class="left-align">
+            <li><p class="bold" style="margin:0;">A3 | CERTIFICADO</p></li>
+            <span style="text-decoration:line-through;">de R$ 254,00</span> por
+            <h3 class="white-text bold">R$240,00</h3>
+          </ul>
+          <a href="<?php echo get_site_url(); ?>/produto/certificado/" class="hoverable btn waves cor-secundaria margin20 left">COMPRAR</a>
+        </div>
+        <div class="col s12 l3 push-l3 margin50">
+          <h1 class="white-text bold">NF-e</h1>
+          <ul class="left-align">
+            <li><p class="bold" style="margin:0;">A3 | CARTÃO</p></li>
+            <span style="text-decoration:line-through;">de R$ 434,50</span> por
+            <h3 class="white-text bold">R$395,00</h3>
           </ul>
           <a href="<?php echo get_site_url(); ?>/produto/certificado/" class="hoverable btn waves cor-secundaria margin20 left">COMPRAR</a>
         </div>
@@ -116,8 +132,8 @@
              </tr>
              <tr>
                 <td><p class="bold">Validade:</p></td>
-                <td>De 1 a 5 anos</td>
-                <td>De 1 a 5 anos</td>
+                <td>De 1 a 3 anos</td>
+                <td>De 1 a 3 anos</td>
              </tr>
              <tr>
                 <td><p class="bold">Indicado para:</p></td>

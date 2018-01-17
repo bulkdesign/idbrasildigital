@@ -11,7 +11,7 @@
         </div>
         <div class="col s12 padding40">
           <div class="row">
-            <form action="<?php bloginfo('template_url'); ?>/vd.php" method="post" class="col s12" id="formvalidation">
+            <form action="<?php bloginfo('template_url'); ?>/vd-cpf.php" method="post" class="col s12" id="formvalidation">
               <div id="ajax-response"></div>
               <div class="row">
                 <div class="input-field col s12 l6 push-l3">

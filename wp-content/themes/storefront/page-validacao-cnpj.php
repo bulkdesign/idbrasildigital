@@ -11,12 +11,12 @@
         </div>
         <div class="col s12 padding40">
           <div class="row">
-            <form action="<?php bloginfo('template_url'); ?>/vd.php" method="post" class="col s12" id="formvalidation">
+            <form action="<?php bloginfo('template_url'); ?>/vd-cnpj.php" method="post" class="col s12" id="formvalidation">
               <div id="ajax-response"></div>
               <div class="row">
                 <div class="input-field col s12 l6 push-l3">
-                  <input maxlength="14" placeholder="Digite o número do CPF" name="cpf_da_validacao" id="cpf_da_validacao" type="text" class="validate" required>
-                  <label for="cpf_da_validacao">CPF do Responsável</label>
+                  <input maxlength="14" placeholder="Digite o número do CPF" name="cpf_da_validacao_cnpj" id="cpf_da_validacao_cnpj" type="text" class="validate" required>
+                  <label for="cpf_da_validacao_cnpj">CPF do Responsável</label>
                 </div>
               </div>
               <div class="row">

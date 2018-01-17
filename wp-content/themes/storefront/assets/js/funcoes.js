@@ -7,6 +7,9 @@
     var $campoCPF = $("#cpf_da_validacao");
     $campoCPF.mask('000.000.000-00', {reverse: true});
 
+    var $campoCPF2 = $("#cpf_da_validacao_cnpj");
+    $campoCPF2.mask('000.000.000-00', {reverse: true});
+
     var $billingCPF = $("#billing_cpf");
     $billingCPF.mask('000.000.000-00', {reverse: true}).attr('maxlength','14');
     

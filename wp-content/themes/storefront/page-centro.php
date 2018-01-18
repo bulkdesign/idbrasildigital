@@ -26,9 +26,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="escondendo"></div>
       <div class="col s12">
-        <div class="calendly-inline-widget" data-url="https://calendly.com/idbr/agendamento-centro" style="min-width:320px;height:1275px;margin-top: 20px;" scrolling="no"></div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/idbr/agendamento-centro" style="width:100%;height:1275px;margin-top: 20px;" scrolling="no"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         <!-- Calendly inline widget end -->
       </div>

@@ -132,6 +132,6 @@ footer {
 
 @media (max-width: 800px) {
 	.site-header .custom-logo-link img {
-		margin-left: 70px;
+		margin-left: 0px;
 	}
 }

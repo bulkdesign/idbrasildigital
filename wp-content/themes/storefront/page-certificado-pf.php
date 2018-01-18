@@ -13,7 +13,7 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-  <div class="sobre" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%, rgba(0, 0, 0, 0.40) 100%), url(https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?auto=format&fit=crop&w=2000&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);background-repeat: no-repeat;background-size: cover;background-position:0 100%;background-attachment:fixed;">
+  <div class="sobre" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%, rgba(0, 0, 0, 0.40) 100%), url(https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?auto=format&fit=crop&w=2000&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);background-repeat: no-repeat;background-size: cover;background-position:0 100%;">
     <h1 class="center white-text bold"><?php the_title(); ?></h1>
   </div>
 
@@ -46,7 +46,7 @@
             $args = array( 'post_type' => 'product', 'posts_per_page' => -1, 'product_cat' => 'e-cpf', 'orderby' => 'asc' );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-              <div class="col s12 l4" style="height: 400px;">
+              <div class="col s12 m6 l4" style="height: 400px;">
                 <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
                   <?php woocommerce_show_product_sale_flash( $post, $product ); ?>
                   <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="200px" height="200px" />'; ?>

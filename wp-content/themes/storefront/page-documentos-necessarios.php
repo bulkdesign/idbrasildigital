@@ -17,7 +17,7 @@ h1 {
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-  <div class="sobre" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%, rgba(0, 0, 0, 0.40) 100%), url(https://images.unsplash.com/photo-1470173274384-c4e8e2f9ea4c?auto=format&fit=crop&w=2000&q=80);background-repeat: no-repeat;background-size: cover;background-position:0 100%;background-attachment:fixed;">
+  <div class="sobre" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%, rgba(0, 0, 0, 0.40) 100%), url(https://images.unsplash.com/photo-1470173274384-c4e8e2f9ea4c?auto=format&fit=crop&w=2000&q=80);background-repeat: no-repeat;background-size: cover;background-position:0 100%;">
     <h1 class="center white-text bold"><?php the_title(); ?></h1>
   </div>
 

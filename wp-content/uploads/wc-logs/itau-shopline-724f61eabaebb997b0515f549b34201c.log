@@ -29,3 +29,23 @@
     [status] => 04
 )
 
+01-18-2018 @ 12:26:46 - Processing payment status for order 213
+01-18-2018 @ 12:26:46 - Requesting payment details for order 213
+01-18-2018 @ 12:26:46 - Request data of payment details for order 213: <?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE consulta [<!ELEMENT consulta (PARAMETER)><!ELEMENT PARAMETER (PARAM)+><!ELEMENT PARAM EMPTY><!ATTLIST PARAM ID CDATA #REQUIRED VALUE CDATA #REQUIRED>]><consulta><PARAMETER><PARAM ID="CodEmp" VALUE="J0282137650001290000027500"/><PARAM ID="Pedido" VALUE="00000213"/><PARAM ID="Valor" VALUE="49,00"/><PARAM ID="tipPag" VALUE="02"/><PARAM ID="sitPag" VALUE="04"/><PARAM ID="dtPag" VALUE=""/><PARAM ID="codAut" VALUE=""/><PARAM ID="numId" VALUE=""/><PARAM ID="compVend" VALUE=""/><PARAM ID="tipCart" VALUE=""/></PARAMETER>
+</consulta>
+01-18-2018 @ 12:26:46 - Payment details for order 213 requested successfully: Array
+(
+    [payment_type] => 02
+    [status] => 04
+)
+
+01-18-2018 @ 15:38:23 - Processing payment status for order 213
+01-18-2018 @ 15:38:23 - Requesting payment details for order 213
+01-18-2018 @ 15:38:24 - Request data of payment details for order 213: <?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE consulta [<!ELEMENT consulta (PARAMETER)><!ELEMENT PARAMETER (PARAM)+><!ELEMENT PARAM EMPTY><!ATTLIST PARAM ID CDATA #REQUIRED VALUE CDATA #REQUIRED>]><consulta><PARAMETER><PARAM ID="CodEmp" VALUE="J0282137650001290000027500"/><PARAM ID="Pedido" VALUE="00000213"/><PARAM ID="Valor" VALUE="49,00"/><PARAM ID="tipPag" VALUE="02"/><PARAM ID="sitPag" VALUE="04"/><PARAM ID="dtPag" VALUE=""/><PARAM ID="codAut" VALUE=""/><PARAM ID="numId" VALUE=""/><PARAM ID="compVend" VALUE=""/><PARAM ID="tipCart" VALUE=""/></PARAMETER>
+</consulta>
+01-18-2018 @ 15:38:24 - Payment details for order 213 requested successfully: Array
+(
+    [payment_type] => 02
+    [status] => 04
+)
+

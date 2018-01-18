@@ -7,10 +7,20 @@
     padding: 0 !important;
     max-width: 100% !important;
   }
+
+@media (max-width: 993px) {
+  .col-full {
+    margin: 0;
+  }
+
+  .produto-destacado {
+    height: 1070px;
+  }
+}
 </style>
 
 <!--SESSÃO PRODUTOS-->
-<div class="produto-destacado" style="background: url(<?php bloginfo('template_url'); ?>/images/header-home.jpg);background-attachment:fixed;background-size: cover;background-position: 100% 50%;">
+<div class="produto-destacado" style="background: url(<?php bloginfo('template_url'); ?>/images/header-home.jpg);background-size: cover;background-position: 100% 50%;">
   <div class="container">
     <!-- DESTAQUE -->
     <div class="row">
@@ -56,7 +66,7 @@
   </div>
 </div>
 <!--TIRA DUVIDAS -->
-<div class="certificado-tiraduvidas" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%, rgba(0, 0, 0, 0.55) 100%), url(https://images.unsplash.com/photo-1461773518188-b3e86f98242f?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);background-size:cover;">
+<div class="certificado-tiraduvidas hide-on-med-and-down" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%, rgba(0, 0, 0, 0.55) 100%), url(https://images.unsplash.com/photo-1461773518188-b3e86f98242f?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);background-size:cover;">
   <div class="container">
     <div class="row">
       <div class="col s12">
@@ -120,37 +130,41 @@
   </div>
 </div>
 <!-- COMPARATIVO -->
-<div class="grey lighten-5 comparativo">
+<div class="grey lighten-5 comparativo hide-on-med-and-down">
   <div class="container">
     <div class="row">
       <div class="col s12 margin30">
         <div class="col s12 center">
           <h1 class="bold">Comparativo entre os certificados</h1>
         </div>
-        <table class="striped">
-          <thead>
-            <th></th>
-            <th>e-CNPJ</th>
-            <th>e-CPF</th>
-          </thead>
-          <tbody>
-             <tr>
-                <td><p class="bold">Tipos de Certificados:</p></td>
-                <td>e-CNPJ A1, e-CNPJ A3, CT-e, NF-e</td>
-                <td>e-CPF A1, e-CPF A3</td>
-             </tr>
-             <tr>
-                <td><p class="bold">Validade:</p></td>
-                <td>De 1 a 3 anos</td>
-                <td>De 1 a 3 anos</td>
-             </tr>
-             <tr>
-                <td><p class="bold">Indicado para:</p></td>
-                <td>Empresas, corporações e instituições cuja situação cadastral junto a Receita Federal do Brasil esteja ativa</td>
-                <td>Pessoas físicas que desejam autenticar o seu acesso a sistemas, assinar documentos eletrônicos com validade jurídica e em casos específicos, também pode representar empresas jurídicas quando seu titular é o representante legal.</td>
-             </tr>
-          </tbody>
-        </table>
+        <div class="row">
+          <div class="col s12">
+            <table class="striped">
+              <thead>
+                <th></th>
+                <th>e-CNPJ</th>
+                <th>e-CPF</th>
+              </thead>
+              <tbody>
+                 <tr>
+                    <td><p class="bold">Tipos de Certificados:</p></td>
+                    <td>e-CNPJ A1, e-CNPJ A3, CT-e, NF-e</td>
+                    <td>e-CPF A1, e-CPF A3</td>
+                 </tr>
+                 <tr>
+                    <td><p class="bold">Validade:</p></td>
+                    <td>De 1 a 3 anos</td>
+                    <td>De 1 a 3 anos</td>
+                 </tr>
+                 <tr>
+                    <td><p class="bold">Indicado para:</p></td>
+                    <td>Empresas, corporações e instituições cuja situação cadastral junto a Receita Federal do Brasil esteja ativa</td>
+                    <td>Pessoas físicas que desejam autenticar o seu acesso a sistemas, assinar documentos eletrônicos com validade jurídica e em casos específicos, também pode representar empresas jurídicas quando seu titular é o representante legal.</td>
+                 </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <div class="col s12 margin30">
         <a href="<?php echo get_site_url(); ?>/loja" class="hoverable btn blue waves btn-primary">VER TODOS OS CERTIFICADOS</a>

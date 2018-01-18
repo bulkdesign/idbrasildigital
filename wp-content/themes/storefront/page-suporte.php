@@ -59,12 +59,12 @@ textarea, textarea:hover, textarea:active {
         <p>O especialista em suporte irá solicitar o download de um dos programas abaixo. Clique para baixar:</p>
       </div>
       <div class="col l8 push-l2 s12">
-        <div class="col l6 s12 padding10">
+        <div class="col l6 m6 s12 padding10">
           <a href="http://www.ammyy.com/en/downloads.html">
             <img style="max-height: 100px;display: block;margin: 0px auto" src="<?php bloginfo('template_url'); ?>/images/ammyy.png" />
           </a>
         </div>
-        <div class="col l6 s12 padding10">
+        <div class="col l6 m6 s12 padding10">
           <a href="https://www.teamviewer.com/pt/download">
             <img style="max-height: 200px;display: block;margin: 0px auto" src="<?php bloginfo('template_url'); ?>/images/teamviewer.png" />
           </a>

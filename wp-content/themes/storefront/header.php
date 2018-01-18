@@ -30,15 +30,15 @@
 	<?php do_action( 'storefront_before_header' ); ?>
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 		<div class="container">
-			<div class="row" style="margin:0;">
-				<div class="col l3 s12" style="width: 250px">
+			<div class="row hide-on-med-and-down" style="margin:0;">
+				<div class="col l3 hide-on-med-and-down" style="width: 250px">
 					<?php storefront_site_title_or_logo(); ?>
 				</div>
-				<ul class="col l6 s12 padding15">
-					<li class="col s12 l2">
+				<ul class="col l5 hide-on-med-and-down padding15">
+					<li class="col s12 l3">
 						<a class="blue-text" href="/suporte">Suporte</a>
 					</li>
-					<li class="col s12 l3">
+					<li class="col s12 l4">
 						<a class="blue-text" href="/cadastro-contabilidade/">Cadastro Contábil</a>
 					</li>
 					<?php if ( is_user_logged_in() ) { ?>
@@ -56,7 +56,7 @@
 						</li>
 					<?php } ?>
 				</ul>
-				<div class="col l3 s12">
+				<div class="col l3 push-l1 hide-on-med-and-down">
 					<ul id="site-header-cart" class="site-header-cart menu">
 						<li class="<?php echo esc_attr( $class ); ?>">
 							<?php storefront_cart_link(); ?>
@@ -67,8 +67,40 @@
 					</ul>
 				</div>
 			</div>
+
+			<div class="row" style="margin:0;">
+				<div class="col s12 hide-on-large-only">
+					<div class="col s9" style="margin-bottom:30px;">
+						<?php storefront_site_title_or_logo(); ?>
+					</div>
+					<div class="col s1 right">
+						<main class="hide-on-large-only">
+							<a class="black-text toggle-overlay"><i class="small material-icons" style="margin: 10px -10px;">menu</i></a>
+						</main>	
+
+						<aside>
+							<div class="outer-close toggle-overlay">
+							  <a class="white-text right close"><i class="margin-clear small material-icons" style="margin:20px;">clear</i></a>
+							</div>
+							<nav class="primary-navigation mobile-menu" role="navigation" aria-label="<?php esc_html_e( 'Secondary Navigation', 'storefront' ); ?>">
+						        <ul>
+							    <?php
+								    wp_nav_menu(
+									    array(
+										    'theme_location'	=> 'secondary',
+										    'fallback_cb'		=> '',
+									    )
+								    );
+							    ?>
+						        </ul>
+							</nav>
+						</aside>
+					</div>
+				</div>
+			</div>
+
 		</div>
-		<div class="blue">
+		<div class="blue hide-on-med-and-down">
 			<div class="container">
 				<?php do_action( 'storefront_header' ); ?>
 			</div>
@@ -76,4 +108,4 @@
 	</header>
 	<div id="content" class="site-content" tabindex="-1">
 		<div class="col-full">
-		<?php do_action( 'storefront_content_top' );
+		<?php do_action( 'storefront_content_top' ); ?>

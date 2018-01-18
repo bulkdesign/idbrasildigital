@@ -26,11 +26,12 @@
         <div class="col s12 l2 push-l1 margin50">
           <p>DOCUMENTAÇÃO NECESSÁRIA</p>
           <ul class="collection">
+            <li class="collection-item">Documento de identificação com foto: RG, CNH ou Passaporte</li>
             <li class="collection-item">Cartão CNPJ</li>
             <li class="collection-item">Comprovante de endereço atualizado</li>
             <li class="collection-item">Contrato Social (com alteração se houver)</li>
             <li class="collection-item">PIS, PASEP, NIT (opcional)</li>
-            <li class="collection-item">RG e CPF</li>
+            <li class="collection-item">CEI</li>
             <li class="collection-item">Título de Eleitor (opcional)</li>
             <li class="collection-item">Todos os documentos devem ser originais</li>
           </ul>

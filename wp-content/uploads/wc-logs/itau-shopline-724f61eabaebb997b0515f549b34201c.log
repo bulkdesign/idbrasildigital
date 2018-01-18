@@ -1,0 +1,31 @@
+01-17-2018 @ 18:32:57 - Generating payment hash for order 213
+01-17-2018 @ 18:32:57 - Hash data for order 213: Array
+(
+    [order_number] => 213
+    [order_total] => 300
+    [description] => Payment for order 213
+    [customer_name] => asdasd asdasdas
+    [registration] => 01
+    [document] => 123213123
+    [address] => weeqweqweq, 05
+    [neighborhood] => qweqwe
+    [zipcode] => 82300357
+    [city] => Curitiba
+    [state] => PR
+    [expiry] => 19012018
+    [return_url] => 
+    [note_line1] => CONSIDERAR 2 DIAS ÚTEIS ANTES DA VALIDAÇÃO PRESENCIAL.
+    [note_line2] => PARA BAIXA DO BOLETO NO DIA ENVIAR COMPROVANTE PARA
+    [note_line3] => FINANCEIRO@IDBRASILDIGITAL.COM.BR
+)
+
+01-17-2018 @ 22:48:34 - Processing payment status for order 213
+01-17-2018 @ 22:48:34 - Requesting payment details for order 213
+01-17-2018 @ 22:48:34 - Request data of payment details for order 213: <?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE consulta [<!ELEMENT consulta (PARAMETER)><!ELEMENT PARAMETER (PARAM)+><!ELEMENT PARAM EMPTY><!ATTLIST PARAM ID CDATA #REQUIRED VALUE CDATA #REQUIRED>]><consulta><PARAMETER><PARAM ID="CodEmp" VALUE="J0282137650001290000027500"/><PARAM ID="Pedido" VALUE="00000213"/><PARAM ID="Valor" VALUE="49,00"/><PARAM ID="tipPag" VALUE="02"/><PARAM ID="sitPag" VALUE="04"/><PARAM ID="dtPag" VALUE=""/><PARAM ID="codAut" VALUE=""/><PARAM ID="numId" VALUE=""/><PARAM ID="compVend" VALUE=""/><PARAM ID="tipCart" VALUE=""/></PARAMETER>
+</consulta>
+01-17-2018 @ 22:48:34 - Payment details for order 213 requested successfully: Array
+(
+    [payment_type] => 02
+    [status] => 04
+)
+

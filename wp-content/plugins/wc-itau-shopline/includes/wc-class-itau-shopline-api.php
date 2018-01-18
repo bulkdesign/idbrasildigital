@@ -321,7 +321,7 @@ class WC_Itau_Shopline_API {
 		$data = array(
 			'order_number'  => $order->id,
 			'order_total'   => (float) $order->get_total(),
-			'description'   => sprintf( __( 'Payment for order %s', 'wc-itau-shopline' ), $order->get_order_number() ),
+			'description'   => sprintf( __( 'Pagamento do pedido %s', 'wc-itau-shopline' ), $order->get_order_number() ),
 			'customer_name' => $this->get_customer_name( $order, $document['code'] ),
 			'registration'  => $document['code'],
 			'document'      => $document['number'],

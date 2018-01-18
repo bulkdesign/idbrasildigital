@@ -26,7 +26,7 @@
         <div class="col s12 l2 push-l1 margin50">
           <p>DOCUMENTAÇÃO NECESSÁRIA</p>
           <ul class="collection">
-            <li class="collection-item">RG e CPF</li>
+            <li class="collection-item">Documento de identificação com foto: RG, CNH ou Passaporte</li>
             <li class="collection-item">Comprovante de Endereço atualizado</li>
             <li class="collection-item">Título de Eleitor (opcional)</li>
             <li class="collection-item">PIS, PASEP, NIT (opcional)</li>

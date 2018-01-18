@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="hide-on-small-only">
+  <div class="hide-on-med-and-down">
     <a href="/agendamento-centro/">
       <div class="hoverable agendamento-centro">
         <h1 class="white-text bold">Sede - Centro
@@ -66,6 +66,7 @@
           <br><span style="font-size:18px">R. São José dos Pinhais, 196</span></h1>
       </div>
     </a>
+    <div style="margin-bottom:50px">&nbsp;</div>
   </div>
 
 

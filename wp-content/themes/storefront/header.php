@@ -51,7 +51,7 @@
 							<a class="blue-text" href="/login/">Login</a>
 						</li>
 					<?php } else { ?>
-						<li class="col s12 l1">
+						<li class="col s12 l2">
 							<a class="blue-text" href="<?php echo wp_logout_url( get_permalink() ); ?>">Sair</a>
 						</li>
 					<?php } ?>

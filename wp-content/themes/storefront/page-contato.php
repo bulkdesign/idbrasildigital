@@ -79,9 +79,9 @@ h6 {
   			<!--FORMULARIO-->
         <div class="col s12 l4 left-align margin50">
           <h3 class="blue-text">Telefones:</h3>
-          <h6>Sede Centro: (41) 3042-0700</h6>
-          <h6>Sede Boqueirão: (41) 3043-0800</h6>
-          <h6>Sede Sítio Cercado: (41) 3308-3105</h6> 
+          <h6>AR Centro: (41) 3042-0700</h6>
+          <h6>ITS Boqueirão: (41) 3043-0800</h6>
+          <h6>ITS Sítio Cercado: (41) 3308-3105</h6> 
           <div class="margin30">
             <h3 class="blue-text">E-mails:</h3>
             <h6><a href="mailto:contato@idbrasildigital.com.br"></a>contato@idbrasildigital.com.br</h6>
@@ -95,7 +95,7 @@ h6 {
       <!-- LOCALIZACAO -->
       <div class="col m12 s12">
         <h1>Localização</h1>
-        <p>Encontre no mapa abaixo uma de nossas sedes:</p>
+        <p>Encontre no mapa abaixo uma de nossas Instalações Técnicas Secundárias:</p>
       </div>
     </div>
   </div>

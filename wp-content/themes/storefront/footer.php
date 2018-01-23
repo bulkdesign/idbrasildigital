@@ -59,9 +59,9 @@
             <div class="col l6 s12 center">
               <p class="grey-text text-lighten-4">LOCALIZAÇÃO</p>
               <ul>
-                <li>Edifício Asa - Rua Voluntários da Pátria, 475 - Cj. 2012 - Centro | Fone: (41) 3042-0700</li>
-                <li>Av. Mal. Floriano Peixoto, 7971 - Sala 12 - Boqueirão | Fone: (41) 3043-0800</li>
-                <li>R. São José dos Pinhais, 196 - Sítio Cercado | Fone: (41) 3308-3105</li> 
+                <li>AR Centro: Edifício Asa - Rua Voluntários da Pátria, 475 - Cj. 2012 - Centro | Fone: (41) 3042-0700</li>
+                <li>ITS Boqueirão: Av. Mal. Floriano Peixoto, 7971 - Sala 12 - Boqueirão | Fone: (41) 3043-0800</li>
+                <li>ITS Sítio Cercado: R. São José dos Pinhais, 196 - Sítio Cercado | Fone: (41) 3308-3105</li> 
               </ul>
             </div>
             <!-- REDES SOCIAIS-->

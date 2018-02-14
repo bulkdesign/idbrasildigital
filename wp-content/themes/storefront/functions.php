@@ -151,3 +151,5 @@ function obtendo_o_preco() {
 
     return $product->get_regular_price();
 }
+
+?>

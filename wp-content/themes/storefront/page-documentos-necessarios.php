@@ -33,7 +33,7 @@ h1 {
               <li class="collection-item">Comprovante de endereço atualizado</li>
               <li class="collection-item">Contrato Social (com alteração se houver)</li>
               <li class="collection-item">PIS, PASEP, NIT (opcional)</li>
-              <li class="collection-item">CEI</li>
+              <li class="collection-item">CEI (opcional)</li>
               <li class="collection-item">Título de Eleitor (opcional)</li>
               <li class="collection-item">Todos os documentos devem ser originais</li>
             </ul>
